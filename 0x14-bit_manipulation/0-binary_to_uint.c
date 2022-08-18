@@ -6,23 +6,23 @@
  *
  * Return:converted number, or 0
  */
-unsigned int binary_to_uint(const char *a)
+unsigned int binary_to_uint(const char *b)
 {
 	int m;
 	unsigned int n;
 
 	n = 0;
-	if (!a)
+	if (!b)
 		return (0);
-	for (m = 0; a[m] != '\0'; m++)
+	for (m = 0; b[m] != '\0'; m++)
 	{
-		if (a[i] != '0' && a[m] != '1')
+		if (b[i] != '0' && b[m] != '1')
 			return (0);
 	}
-	for (m = 0; a[m] != '\0'; m++)
+	for (m = 0; b[m] != '\0'; m++)
 	{
 		n <<= 1;
-		if (a[m] == '1')
+		if (b[m] == '1')
 			n += 1;
 	}
 	return (n);
