@@ -12,7 +12,7 @@ size_t _strlen(char *str)
 
 	for (j = 0; str[j]; j++)
 		;
-	return (i);
+	return (j);
 }
 
 /**
